@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>联系我们_某某人力资源有限公司</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+<link rel="stylesheet" href="./src/css/amazeui.min.css">
+<link rel="stylesheet" href="./src/css/app.css">
+<link rel="stylesheet" href="./src/css/index.css">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="./src/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="./src/js/amazeui.min.js"></script>
+<script src="./src/js/font_size.js"></script>
+<script src="./dist/index.js"></script>
+</head>
+<body>
+
+<script>
+    $(function () {
+        $('.chbnav_touch_top_list').click(function () {
+            $('.chbnav_touch_nav_box').addClass('chbnav_select');
+            $('body').css('position','fixed');
+        });
+        $('.chbnav_touch_nav_title img').click(function () {
+            $('.chbnav_touch_nav_box').removeClass('chbnav_select');
+            $('body').css('position','relative');
+        });
+
+        $(".chbnav_touch_navli").click(function () {
+
+            $(".chbnav_touch_erji").slideUp();
+
+            if($(".chbnav_touch_erji",this).css("display")=="block"){
+
+            }else{
+                $(".chbnav_touch_erji",this).slideDown();
+            }
+        });
+    })
+</script>
+
+<div class="n_banner" style="background: url(./src/images/contact.jpg);">
+  <div class="n_btxt">
+    <div class="n_btxt01">
+      <div class="n_btxt02">联系我们</div>
+      <div class="n_btxt04">
+        <div class="n_btxt05"></div>
+      </div>
+      <div class="n_btxt03">我们珍借每一次合作的机会，竭尽全力提供更高质量的服务！</div>
+    </div>
+  </div>
+</div>
+<div class="t_cont">
+  <div class="n_fuwu c">
+    <div class="n_fuwu_z">
+      <div class="t_ser_top c">
+        <div class="t_sert_l">
+          <div class="t_sert_l01">联系我们</div>
+        </div>
+        <div class="n_sert_r">位置： <a href='index.html'>主页</a> > <a href='contact.html'>联系我们</a></div>
+      </div>
+      <div class="n_bottom"></div>
+      <div class="n_fuwu_nr c">
+        <div class="n_lx_top">感谢您来到某某人力，若您有合作意向，您可以通过以下联系方式找到我们。</div>
+        <div class="n_lx_b">联系信息</div>
+        <div class="n_lx_a04"> <span style="font-weight: bold; font-size: 18px;">开封某某人力资源服务股份有限公司</span><br />
+地址：河南省开封市祥符区<br />
+邮箱：<a class="__yjs_email__" href="/cdn-cgi/l/email-protection" data-yjsemail="ed8c89808483ad8a8897858c838e83c38e8280">[email&#160;protected]</a><script data-yjshash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-yjshash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-yjsemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script><br />
+电话：0371-88888888<br />
+手机：13988889999<br />
+ </div>
+        <div class="n_lx_b">地理位置</div>
+        <div class="n_lx_a05"> 
+          <script type="text/javascript" src="./src/js/map.js"></script>
+          <div style="width:1280px;height:550px;font-size:12px" id="map"></div>
+          <script type="text/javascript">
+            //创建和初始化地图函数：
+            function initMap(){
+                createMap();//创建地图
+                setMapEvent();//设置地图事件
+                addMapControl();//向地图添加控件
+                addMapOverlay();//向地图添加覆盖物
+            }
+            function createMap(){
+                map = new BMap.Map("map");
+                map.centerAndZoom(new BMap.Point(114.445979,34.770891),18);
+            }
+            function setMapEvent(){
+                map.enableScrollWheelZoom();
+                map.enableKeyboard();
+                map.enableDragging();
+                map.enableDoubleClickZoom()
+            }
+            function addClickHandler(target,window){
+                target.addEventListener("click",function(){
+                    target.openInfoWindow(window);
+                });
+            }
+            function addMapOverlay(){
+                var markers = [
+                    {content:"地址：河南省开封市祥符区",title:"某某人力资源有限公司",imageOffset: {width:-46,height:-21},position:{lat:34.770891,lng:114.445979}}
+                ];
+                for(var index = 0; index < markers.length; index++ ){
+                    var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                    var marker = new BMap.Marker(point,{icon:new BMap.Icon("https://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                            imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                        })});
+                    var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                    var opts = {
+                        width: 200,
+                        title: markers[index].title,
+                        enableMessage: false
+                    };
+                    var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                    marker.setLabel(label);
+                    addClickHandler(marker,infoWindow);
+                    map.addOverlay(marker);
+                };
+            }
+            //向地图添加控件
+            function addMapControl(){
+                var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:1});
+                map.addControl(navControl);
+                var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+                map.addControl(overviewControl);
+            }
+            var map;
+            initMap();
+        </script> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

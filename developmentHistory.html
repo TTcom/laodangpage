@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>关于我们  /  发展历程_某某人力资源有限公司</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+<link rel="stylesheet" href="./src/css/amazeui.min.css">
+<link rel="stylesheet" href="./src/css/app.css">
+<link rel="stylesheet" href="./src/css/index.css">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="./src/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="./src/js/amazeui.min.js"></script>
+<script src="./src/js/font_size.js"></script>
+<script src="./dist/index.js"></script>
+</head>
+<body>
+<!-- 代码区 --> 
+<script>
+    $(function () {
+        $('.chbnav_touch_top_list').click(function () {
+            $('.chbnav_touch_nav_box').addClass('chbnav_select');
+            $('body').css('position','fixed');
+        });
+        $('.chbnav_touch_nav_title img').click(function () {
+            $('.chbnav_touch_nav_box').removeClass('chbnav_select');
+            $('body').css('position','relative');
+        });
+
+        $(".chbnav_touch_navli").click(function () {
+
+            $(".chbnav_touch_erji").slideUp();
+
+            if($(".chbnav_touch_erji",this).css("display")=="block"){
+
+            }else{
+                $(".chbnav_touch_erji",this).slideDown();
+            }
+        });
+    })
+</script>
+<div class="n_banner" style="background: url(./src/images/about.jpg);">
+  <div class="n_btxt">
+    <div class="n_btxt01">
+      <div class="n_btxt02">关于我们</div>
+      <div class="n_btxt04">
+        <div class="n_btxt05"></div>
+      </div>
+      <div class="n_btxt03">是广东省上市的人力资源公司（股票代码：xxxxxx）</div>
+    </div>
+  </div>
+</div>
+<div class="t_cont">
+  <div class="n_fuwu c">
+    <div class="n_fuwu_z">
+      <div class="t_ser_top c">
+        <div class="t_sert_l">
+          <div class="t_sert_l01">发展历程</div>
+        </div>
+        <div class="n_sert_r">位置： <a href='index.html'>主页</a> > <a href='about.html'>关于我们</a> > <a href='developmentHistory.html'>发展历程</a> > </div>
+      </div>
+      <div class="n_bottom"></div>
+      <style>
+  h2 {
+    
+    font-size: 30px;
+}
+</style>
+      <div class="n_fuwu_nr c">
+        <div class="show_page c"> <h2> 2020年 </h2>
+          <p> 独资研发的小微企业服务平台快速迭代发展，某某成长学院成立。... </p><h2> 2019年 </h2>
+          <p> 联通人力调整内部组织架构，加速拓展业务... </p><h2> 2018年 </h2>
+          <p> 合作客户急速增加,联通人力迅速发展... </p><h2> 2017年 </h2>
+          <p> 公司决策层着手规划公司转型，并进行了一系列战略规划，将互联网+引入人力资源行业。... </p><h2> 2016年 </h2>
+          <p> 发展新服务模式,更完善的为企业服务... </p><h2> 2015年 </h2>
+          <p> 拓展市场,设立省内多家分支机构... </p><h2> 2014年 </h2>
+          <p> 各区域成立联通人力办事处,成为当地劳务派遣核心供应商... </p> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
