@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport"
+    content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+    <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./src/css/amazeui.min.css">
+  <link rel="stylesheet" href="./src/css/app.css">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="./src/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="./src/js/amazeui.min.js"></script>
+  <script src="./src/js/font_size.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <script>
+    $(function () {
+      $('.chbnav_touch_top_list').click(function () {
+        $('.chbnav_touch_nav_box').addClass('chbnav_select');
+        $('body').css('position', 'fixed');
+      });
+      $('.chbnav_touch_nav_title img').click(function () {
+        $('.chbnav_touch_nav_box').removeClass('chbnav_select');
+        $('body').css('position', 'relative');
+      });
+
+      $(".chbnav_touch_navli").click(function () {
+
+        $(".chbnav_touch_erji").slideUp();
+
+        if ($(".chbnav_touch_erji", this).css("display") == "block") {
+
+        } else {
+          $(".chbnav_touch_erji", this).slideDown();
+        }
+      });
+    })
+  </script>
+  <div class="n_banner" style="background: url(./src/images/about.jpg);">
+    <div class="n_btxt">
+      <div class="n_btxt01">
+        <div class="n_btxt02">关于我们</div>
+        <div class="n_btxt04">
+          <div class="n_btxt05"></div>
+        </div>
+        <div class="n_btxt03">是河南省上市的人力资源公司（股票代码：xxxxxx）</div>
+      </div>
+    </div>
+  </div>
+  <div class="t_cont">
+    <div class="n_fuwu c">
+      <div class="n_fuwu_z">
+        <div class="t_ser_top c">
+          <div class="t_sert_l">
+            <div class="t_sert_l01">企业文化</div>
+          </div>
+          <div class="n_sert_r">位置： <a href='index.html'>主页</a> > <a href='about.html'>关于我们</a> > <a
+              href='corporatCulture.html'>企业文化</a></div>
+        </div>
+        <div class="n_bottom"></div>
+        <style>
+          h2 {
+
+            font-size: 30px;
+          }
+        </style>
+        <div class="n_fuwu_nr c">
+          <div class="show_page c">
+            <div style="text-align: center;">
+              <img src="./src/images/1-200R5112322245.jpg" /></div>
+            <h3>愿景：</h3>
+            <p>成为人力资源服务行业一流企业</p>
+            <h3>使命：</h3>
+            <p>为客户提供卓越人力资源服务，实现人力资本增值</p>
+            <h3>价值观：</h3>
+            <p>创新、专业、凝聚、协作、进取</p>
+            <h3>经营理念：</h3>
+            <p>以人为本，以信为上，以客户为中心</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

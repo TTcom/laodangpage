@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c -w"
+    "build": "rollup -c -w",
+    "commit":"git add . && git commit && git push"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +21,9 @@
   "dependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.1",
     "lodash": "^4.17.21",
-    "lodash-es": "^4.17.21",
-    "wangeditor": "^4.7.5"
+    "lodash-es": "^4.17.21"
   }
 }
