@@ -1,4 +1,4 @@
-
+import './css/style.css'
 var baseurl = ''
 console.log(baseurl)
 $(function () {
