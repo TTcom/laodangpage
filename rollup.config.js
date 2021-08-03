@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from "@rollup/plugin-babel";
-import html from "@rollup/plugin-html";
+// import html from "@rollup/plugin-html";
 // import { terser } from "rollup-plugin-terser"; 
 import postcss from 'rollup-plugin-postcss'  //处理css文件
 import serve from 'rollup-plugin-serve'  //开启本地服务器
@@ -10,13 +10,16 @@ export default [
     // 第一个入口文件
     {    
         	input: {
-                index:'./index.js',
-                first:'./first.js',
-                partner:'./partner.js',
-                contact:'./contact.js',
-                news:'./news.js',
-                recruitment:'./recruitment.js'
+                index:'./js/index.js',
+                first:'./js/first.js',
+                partner:'./js/partner.js',
+                contact:'./js/contact.js',
+                news:'./js/news.js',
+                enterpriseService:'./js/enterpriseService.js',
+                about:'./js/about.js',
+                recruitment:'./js/recruitment.js'
             },
+            // preserveModules: true, //保留模块
             output:{
                 dir: 'dist',
                 format: 'es',
@@ -25,16 +28,15 @@ export default [
             plugins: [  // 注意这里是plugins!!!，我就是写成了plugin，结果插件都无效
         		resolve(),   //解决引入依赖的第三方库进行合并的问题
         		commonjs(), //解决大量的npm模块是基于CommonJS模块方式，这就导致了大量 npm模块不能直接编译使用的问题
-        	    babel({ babelHelpers: 'bundled' }),
                 postcss(),
                 livereload(),
                 serve({
-                    open:true,
+                    open:false,
                     port:8888,
                     contentBase:""
         
                 }),
-                html()
+                // html()
             ],
             external: [], //不想在最终生成的打包文件中出现的第三方依赖
         }

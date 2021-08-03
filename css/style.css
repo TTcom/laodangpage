@@ -1,4 +1,36 @@
-body{
-    background: yellow;
-    font-size: 24px;
+.t_ser_b{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.t_ser_b :nth-child(3n+0){
+    margin-right: 0;
+}
+.enterprisecard{
+    min-height: 140px;
+    min-width: 200px;
+    background: #f8f8f8;
+    margin-right:36px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 35px;
+}
+.enterprisecard img{
+    width: 100px;
+    height: 100px;
+}
+.t_ser_b .entertext{
+    max-width: 329px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+.t_ser_b .maintitle{
+    font-size: 22px;
+    color: #333333;
+    line-height: 1.6;
+    padding-top: 20px;
 }
