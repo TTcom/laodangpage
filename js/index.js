@@ -17,7 +17,7 @@ $(function () {
             <div class="c_nav_nav_ul">
               <ul>
                 <li class="c_nav_nav_li1"> <a href="index.html">
-                  <div class="c_nav_nav_li_a c c_nav_nav_li_a_hover">网站首页</div>
+                  <div class="c_nav_nav_li_a c ">网站首页</div>
                   </a> </li>
                 <li class="c_nav_nav_li1"> <a href="about.html">
                   <div class="c_nav_nav_li_a c ">关于我们</div>

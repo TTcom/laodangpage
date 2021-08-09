@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+<link rel="icon" href="./favicon.ico">
+<link rel="stylesheet" href="./src/css/amazeui.min.css">
+<link rel="stylesheet" href="./src/css/app.css">
+<link rel="stylesheet" href="./src/css/index.css">
+<link rel="stylesheet" href="./src/css/recruitment.css">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="./src/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="./src/js/amazeui.min.js"></script>
+<script src="./src/js/font_size.js"></script>
+<script src="./index.js"></script>
+<script src="./recruitment.js"></script>
+<style>
+  .c_nav_nav_li1:nth-child(6){
+    border-bottom: 2px solid #0C4DA2;
+  }
+</style>
+</head>
+<body>
+
+<script>
+    $(function () {
+        $('.chbnav_touch_top_list').click(function () {
+            $('.chbnav_touch_nav_box').addClass('chbnav_select');
+            $('body').css('position','fixed');
+        });
+        $('.chbnav_touch_nav_title img').click(function () {
+            $('.chbnav_touch_nav_box').removeClass('chbnav_select');
+            $('body').css('position','relative');
+        });
+
+        $(".chbnav_touch_navli").click(function () {
+
+            $(".chbnav_touch_erji").slideUp();
+
+            if($(".chbnav_touch_erji",this).css("display")=="block"){
+
+            }else{
+                $(".chbnav_touch_erji",this).slideDown();
+            }
+        });
+    })
+</script>
+
+<div class="n_banner" style="background: url(./src/images/hr.jpg);">
+  <div class="n_btxt">
+    <div class="n_btxt01">
+      <div class="n_btxt02">招聘信息</div>
+      <div class="n_btxt04">
+        <div class="n_btxt05"></div>
+      </div>
+      <div class="n_btxt03">将内容、技术和服务进行完美融合，打造高效人力资源管理综合解决方案</div>
+    </div>
+  </div>
+</div>
+<div class="t_cont">
+  <div class="n_fuwu c">
+    <div class="n_fuwu_z">
+      <div class="t_ser_top c">
+        <div class="t_sert_l">
+          <div class="t_sert_l01">招聘信息</div>
+        </div>
+        <div class="n_sert_r">位置： <a href='index.html'>主页</a> > <a href='recruitment.html'>招聘信息</a> > </div>
+      </div>
+      <div class="recruitmsg">
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
